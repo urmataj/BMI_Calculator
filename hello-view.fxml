@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<AnchorPane prefHeight="447.0" prefWidth="356.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmi_calculator.HelloController">
+   <children>
+   
+          <Label fx:id="welcomeText" layoutX="104.0" layoutY="36.0" prefHeight="40.0" prefWidth="139.0" text="BMI Calculator" textFill="#606060">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+         </padding>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="90.0" text="Metric Units" textFill="#808080">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="229.0" layoutY="90.0" text="English Units" textFill="GREY">
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </Label>
+      <Label layoutX="14.0" layoutY="118.0" text="Weight" textFill="#606060">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="inputHeightMetric" layoutX="94.0" layoutY="160.0" prefHeight="26.0" prefWidth="94.0" promptText="cm" />
+      <TextField fx:id="inputWeightMetric" layoutX="94.0" layoutY="123.0" prefHeight="26.0" prefWidth="94.0" promptText="kg" />
+      <Label layoutX="16.0" layoutY="155.0" text="Height" textFill="#606060">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="inputWeightEnglish" layoutX="216.0" layoutY="123.0" prefHeight="26.0" prefWidth="94.0" promptText="lbs" />
+      <TextField fx:id="inputHeightEnglish" layoutX="217.0" layoutY="160.0" prefHeight="26.0" prefWidth="94.0" promptText="in" />
+      <Button layoutX="266.0" layoutY="211.0" mnemonicParsing="false" onAction="#onCalculateButtonClick" text="Calculate" />
+      <Label layoutX="55.0" layoutY="238.0" lineSpacing="2.0" prefWidth="105.0" text="Your result :" textFill="#606060">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <Label layoutX="59.0" layoutY="286.0" text="BMI Status : " textFill="#606060">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="358.0" prefHeight="74.0" prefWidth="190.0" text="Underweight : less than 18.5 Normal : between 18.5 and 24.9 Overweight : between 25 and 29.9 Obese : 30 or greater " textFill="#606060" wrapText="true" />
+      <Label layoutX="22.0" layoutY="340.0" text="BMI Values : " textFill="#606060">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" layoutX="167.0" layoutY="290.0" prefHeight="18.0" prefWidth="174.0" />
+      <Label fx:id="result" layoutX="167.0" layoutY="247.0" prefHeight="18.0" prefWidth="174.0" />
+      <MenuBar layoutX="8.0" layoutY="14.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onClearButtonClick" text="Clear" />
+                  <MenuItem mnemonicParsing="false" onAction="#onExitButtonClick" text="Exit" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <TextFlow prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women. Enter your weight and height using standard or metric measures. Select &quot;Calculate&quot; and your BMI will appear below." />
+                           </children>
+                        </TextFlow>
+                     </graphic>
+                  </MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
