@@ -12,5 +12,6 @@ FXML and java code adapter. The class that is a layer between the java code and 
 
 The user types in his/her height and weight in metrics, and the program calculates BMI based on those inputs and then displays BMI status (Underweight, Normal, Overweight, Obese) based on the calculated BMI.
 
-![application](https://github.com/urmataj/BMI_Calculator/assets/145670962/f24ecd22-464e-4011-b303-9fbc94babd40)
+![Снимок экрана (2)](https://github.com/urmataj/BMI_Calculator/assets/145670962/03d44cc9-d596-4c5f-bd84-3575cb4dd587)
+
 
