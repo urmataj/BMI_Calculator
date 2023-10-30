@@ -11,3 +11,6 @@ Responsible for what the application displays.
 FXML and java code adapter. The class that is a layer between the java code and the FXML file. All fx:id links are connected through it, calls to interactive interface elements are processed in its methods, and initialization occurs immediately.
 
 The user types in his/her height and weight in metrics, and the program calculates BMI based on those inputs and then displays BMI status (Underweight, Normal, Overweight, Obese) based on the calculated BMI.
+
+![application](https://github.com/urmataj/BMI_Calculator/assets/145670962/f24ecd22-464e-4011-b303-9fbc94babd40)
+
